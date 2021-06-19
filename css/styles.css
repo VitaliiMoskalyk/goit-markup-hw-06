@@ -110,7 +110,7 @@ body {
 /*Summary class*/
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -164,18 +164,19 @@ section.site-header {
 }
 
 .menu-nav-conteiner.second {
-  margin-left: 305px;
+  margin-left: 300px;
   align-items: center;
 }
 
+.second .item:not(:last-child){
+  margin-right: 30px;
+}
 /*Добавление иконок в хедер*/
 
 .icon-envelope,.icon-smartphone{
-  
 
 fill:currentColor;
   margin-right: 10px;
-
 }
 
 .icon-envelope:hover,.icon-smartphone:hover{
@@ -265,6 +266,12 @@ fill:currentColor;
   cursor: pointer;
 }
 
+.blue{
+  
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px;
+}
 .blue,
 .menu-nav-link-sort:hover,
 .menu-nav-link-sort:focus {
@@ -318,7 +325,7 @@ fill:currentColor;
 }
 
 .our-portfolio-elements li {
-  flex-basis: calc(100% / 3 - 29px);
+  flex-basis:(100%/3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -418,7 +425,7 @@ address {
 }
 
 .you-are-welcome{
-  display: inline-flex;
+  display: flex;
  flex-direction: column;
  
  padding: 0;
@@ -429,7 +436,7 @@ address {
 .actions.fut{
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
 .actions.fut .icons-items{
@@ -448,8 +455,47 @@ line-height:1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--active-buttons-txt-color);
+
+margin-bottom: 20px;
 }
 
+/*Форма в футере*/
+
+.subscribe-for{
+  margin-left: 93px;
+}
+
+.subscribe-form{
+  
+  display: flex;
+  height: 50px;
+ 
+}
+.svg-subscribe{
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.icons-subscribe{
+  display: flex;
+  padding: 10px 29px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.client-mail{
+  min-width: 358px;
+  margin-right: 12px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--active-buttons-txt-color);
+}
+.client-mail:focus{
+  outline: none;
+}
 /*С Т У Д И Я */
 
 /*Герой*/
@@ -596,6 +642,9 @@ color: var(--active-buttons-txt-color);
 .items-of-section-people:not(:last-child) {
   margin-right: 30px;
   flex-wrap: wrap;
+}
+.backColGrey .items{
+  justify-content:baseline;
 }
 
 .items-of-section-people {
