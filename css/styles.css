@@ -179,7 +179,7 @@ fill:currentColor;
   margin-right: 10px;
 }
 
-.icon-envelope:hover,.icon-smartphone:hover{
+.icon-envelope:hover,.icon-smartphone:hover,.icon-envelope:focus,.icon-smartphone:focus{
   fill: currentColor;
 }
 
@@ -200,7 +200,7 @@ fill:currentColor;
 
 .menu-nav-contacts:hover,
 .menu-nav-contacts:focus .menu-nav-link:focus,
-.menu-nav-link:hover,
+.menu-nav-link:hover,.menu-nav-link:focus,
 .visited {
   color: var(--active-buttons-color);
 }
@@ -703,7 +703,7 @@ background-color:rgba(255, 255, 255, 0.1);
 
 }
 
-.icons:hover{
+.icons:hover,.icons:focus{
   fill: var(--active-buttons-txt-color);
   background-color: var(--active-buttons-color);
 }
